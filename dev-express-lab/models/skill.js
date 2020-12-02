@@ -32,6 +32,6 @@ function deleteOne(id) {
 
 function update(id, newSkill) {
   const idx = skills.findIndex((skill) => skill.id === parseInt(id));
-  skills(idx).skill = newSkill.skill
-  skills(idx).done = newSkill.done === 'on' ? true : false
+  skills[idx].skill = newSkill.skills
+  skills[idx].done = newSkill.done === 'on' ? true : false
 }
